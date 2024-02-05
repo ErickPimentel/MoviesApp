@@ -44,6 +44,8 @@ class MovieListViewModel @Inject constructor(
                 }
             }
 
+            else -> {}
+
         }
     }
 
@@ -78,6 +80,7 @@ class MovieListViewModel @Inject constructor(
                                 isLoading = result.isLoading)
                         }
                     }
+                    else -> {}
                 }
             }
         }
@@ -114,6 +117,7 @@ class MovieListViewModel @Inject constructor(
                                 isLoading = result.isLoading)
                         }
                     }
+                    else -> {}
                 }
             }
         }
