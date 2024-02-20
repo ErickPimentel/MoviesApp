@@ -17,6 +17,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.TopAppBarDefaults.topAppBarColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableIntStateOf
@@ -64,9 +65,7 @@ fun HomeScreen(navController: NavHostController) {
                     )
                 },
                 modifier = Modifier.shadow(2.dp),
-                colors = TopAppBarDefaults.smallTopAppBarColors(
-                    MaterialTheme.colorScheme.inverseOnSurface
-                )
+                colors = topAppBarColors(MaterialTheme.colorScheme.inverseOnSurface)
             )
         }
     ) {
